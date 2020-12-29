@@ -7,7 +7,7 @@ The objective is to check how many words can you type in 10 seconds. Have fun!
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://speedtypealex.netlify.app/)
 
 
 ## Getting Started
