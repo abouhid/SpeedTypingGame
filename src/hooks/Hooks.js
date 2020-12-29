@@ -34,7 +34,6 @@ const Hooks = (time=10) => {
         setStartGameState(false)
         setText("")
         setCount(wordCount(text))
-
     }
 
     useEffect(()=> {
