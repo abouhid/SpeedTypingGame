@@ -7,15 +7,15 @@ const Hooks = (time = 10) => {
   const [text, setText] = useState('');
   const boxRef = useRef(null);
 
-  const handleChange = e => {
-    const { value } = e.target;
-    setText(value);
-    setCount(wordCount(text));
-  };
   const wordCount = text => {
     const arr = [...new Set(text.trim().split(' '))];
     const filteredArr = arr.filter(word => word !== '');
     return filteredArr.length;
+  };
+  const handleChange = e => {
+    const { value } = e.target;
+    setText(value);
+    setCount(wordCount(text));
   };
 
   const decrementTime = () => {
