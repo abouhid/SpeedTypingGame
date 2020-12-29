@@ -10,9 +10,10 @@ const Hooks = (time = 10) => {
   const handleChange = e => {
     const { value } = e.target;
     setText(value);
+    setCount(wordCount(text));
   };
   const wordCount = text => {
-    const arr = text.trim().split(' ');
+    const arr = [...new Set(text.trim().split(' '))];
     const filteredArr = arr.filter(word => word !== '');
     return filteredArr.length;
   };
@@ -33,7 +34,6 @@ const Hooks = (time = 10) => {
     setTimer(time);
     setStartGameState(false);
     setText('');
-    setCount(wordCount(text));
   };
 
   useEffect(() => {
