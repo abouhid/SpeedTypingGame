@@ -1,15 +1,16 @@
-html, body {
+html,
+body {
   background: black;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: white;
-  margin:0;
+  margin: 0;
   padding: 0;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   background-image: url('./images/background.png');
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: center; 
+  background-position: center;
   background-position-y: 1vh;
 }
 
@@ -21,12 +22,11 @@ button {
   font-family: 'Press Start 2P', cursive;
   display: block;
   margin: 0 auto;
-  border: none;
+  border: 1px solid black;
   background: #a80020;
-  background: #F7503E;
+  background: #f7503e;
   padding: 10px 20px;
   text-transform: uppercase;
-  border: 1px solid black
 }
 
 button:disabled {
@@ -35,7 +35,7 @@ button:disabled {
 
 h1 {
   font-size: 20px;
-  text-align:center;
+  text-align: center;
 }
 
 textarea {
@@ -45,13 +45,13 @@ textarea {
   margin: 0 auto;
   outline: none;
   height: 150px;
-  background: #F8F7D1;
+  background: #f8f7d1;
   padding: 10px;
   resize: none;
 }
 
 textarea:disabled {
-  background-color: #F0EFCB;
+  background-color: #f0efcb;
 }
 
 h4 {
