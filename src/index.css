@@ -57,3 +57,12 @@ textarea:disabled {
 h4 {
   margin-top: 48px;
 }
+
+.textToType {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 30%;
+  text-align: initial;
+  line-height: 1.2em;
+}

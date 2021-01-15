@@ -1,4 +1,5 @@
 import './App.css';
+import { LoremIpsum } from 'react-lorem-ipsum';
 import Hooks from './hooks/Hooks';
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
         onChange={handleChange}
         value={text}
       />
+      <h3 className="textToType">
+        {' '}
+        <p>Text to type:</p>
+        <LoremIpsum p={1} random={false} avgWordsPerSentence={8} avgSentencesPerParagraph={6} />
+      </h3>
       <h4>
         Time Remaining:
         {time}
