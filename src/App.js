@@ -15,8 +15,8 @@ function App() {
       />
       <h3 className="textToType">
         {' '}
-        <h1>Text to type:</h1>
-        <LoremIpsum p={1} avgWordsPerSentence={8} avgSentencesPerParagraph={6} />
+        <p>Text to type:</p>
+        <LoremIpsum p={1} random={false} avgWordsPerSentence={8} avgSentencesPerParagraph={6} />
       </h3>
       <h4>
         Time Remaining:
